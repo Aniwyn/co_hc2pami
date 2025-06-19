@@ -24,30 +24,18 @@ import { useReactToPrint } from "react-to-print"
 import html2pdf from "html2pdf.js"
 
 export default function App() {
-    //const [firstName, setFirstName] = useState("")
-    //const [lastName, setLastName] = useState("")
-    //const [date, setDate] = useState(new Date())
-    //const [indexFO, setIndexFO] = useState("")
-    //const [indexBMC, setIndexBMC] = useState("")
-    //const [indexRF, setIndexRF] = useState("OD ()   -   OI ()")
-    //const [indexAV, setIndexAV] = useState("OD ()/10   -   OI ()/10")
-    //const [indexPIO, setIndexPIO] = useState("OD ()   -   OI ()")
-    //const [observations, setObservations] = useState("")
-    //const [medic, setMedic] = useState({})
-    
-    const [printStyle, setPrintStyle] = useState({})
-
-    const [lastName, setLastName] = useState("RUEDA")
-    const [firstName, setFirstName] = useState("CESAR")
+    const [firstName, setFirstName] = useState("")
+    const [lastName, setLastName] = useState("")
     const [date, setDate] = useState(new Date())
-    const [indexFO, setIndexFO] = useState("OI ATROFIA EN PLACA DE POLO COMPLETA")
-    const [indexBMC, setIndexBMC] = useState("OD PSEUDOFAQUIA / OI CATARATA")
-    const [indexRF, setIndexRF] = useState("OD 6/10 / OI ---/10")
-    const [indexAV, setIndexAV] = useState("OD - 1,25 - 0,50 / OI -1,00")
-    const [indexPIO, setIndexPIO] = useState("OD --- / OI ---")
-    const [observations, setObservations] = useState("PACIENTE DERIVADO PARA INTERCONSULTA POR CIRUGIA DE CATARATA DE OJO IZQUIERDO. POR EL MOMENTO NO DESEA REALIZARSE. VOLVER A CONTROL")
+    const [indexFO, setIndexFO] = useState("")
+    const [indexBMC, setIndexBMC] = useState("")
+    const [indexRF, setIndexRF] = useState("OD ()   -   OI ()")
+    const [indexAV, setIndexAV] = useState("OD ()/10   -   OI ()/10")
+    const [indexPIO, setIndexPIO] = useState("OD ()   -   OI ()")
+    const [observations, setObservations] = useState("")
     const [medic, setMedic] = useState({})
     
+    const [printStyle, setPrintStyle] = useState({})
 
     const handleLastName = (e) => setLastName(e.target.value)
     const handleFirstName = (e) => setFirstName(e.target.value)
