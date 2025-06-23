@@ -9,9 +9,11 @@ lerna-debug.log*
 
 node_modules
 public/stamps
+public/patients.json
 dist
 dist-ssr
 *.local
+.env
 
 # Editor directories and files
 .vscode/*
