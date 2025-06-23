@@ -20,7 +20,7 @@ const MedicalHistory = ({ patient }) => {
                             <p><strong className="font-bold">Medico: </strong>{` ${event.medic}`}</p>
                             <div className="pl-8 pt-2">
                                 {event.observations.split("\n").map((line, idx) => (
-                                    <p key={idx}>{line}</p>
+                                    <p key={idx} className="leading-5">{line}</p>
                                 ))}
                             </div>
                         </>
