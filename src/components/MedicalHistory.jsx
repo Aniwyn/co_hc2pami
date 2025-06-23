@@ -1,11 +1,10 @@
-import { useState } from "react";
 import { DialogBody, DialogHeader, Typography } from "@material-tailwind/react"
 
 const MedicalHistory = ({ patient }) => {
     console.log(patient)
     return (
         <>
-            <DialogHeader>Pacientes</DialogHeader>
+            <DialogHeader>Historia clínica</DialogHeader>
             <DialogBody className="overflow-scroll">
                 <p><strong className="font-bold">N° ficha: </strong>{patient.id_pacient && ` ${patient.id_pacient}`}</p>
                 <p><strong className="font-bold">DNI: </strong>{patient.dni && ` ${patient.dni}`}</p>

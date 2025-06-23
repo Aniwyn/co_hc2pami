@@ -7,7 +7,6 @@ import {
     Dialog,
     DialogHeader,
     DialogBody,
-    DialogFooter,
     Input,
     List,
     ListItem,
