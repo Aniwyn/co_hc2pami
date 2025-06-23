@@ -39,13 +39,14 @@ export default function App() {
     const [indexAV, setIndexAV] = useState("OD ()/10   -   OI ()/10")
     const [indexPIO, setIndexPIO] = useState("OD ()   -   OI ()")
     const [observations, setObservations] = useState("")
+    
     const [medic, setMedic] = useState({})
-    const [printStyle, setPrintStyle] = useState({})
     const [results, setResults] = useState([])
     const [selectedPatient, setSelectedPatient] = useState({})
     const [open, setOpen] = useState(false)
     const [open2, setOpen2] = useState(false)
     const { data, loading } = usePatients()
+    const [printStyle, setPrintStyle] = useState({})
 
     const handleLastName = (e) => setLastName(e.target.value)
     const handleFirstName = (e) => setFirstName(e.target.value)
