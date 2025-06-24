@@ -373,9 +373,9 @@ export default function App() {
                     </Card>
                 </div>
             </Card>
-            <Dialog open={open} handler={handleOpen} className="h-96 overflow-scroll">
+            <Dialog open={open} handler={handleOpen} className="h-96 overflow-y-scroll">
                 <DialogHeader>Pacientes</DialogHeader>
-                <DialogBody className="overflow-scroll">
+                <DialogBody>
                     <List>
                         {
                             results.map(patient => {
@@ -385,7 +385,7 @@ export default function App() {
                     </List>
                 </DialogBody>
             </Dialog>
-            <Dialog open={open2} handler={handleOpen2} className="h-96 overflow-scroll">
+            <Dialog open={open2} handler={handleOpen2} className="h-96 overflow-y-scroll">
                 {selectedPatient ?
                     <MedicalHistory patient={selectedPatient}/>
                 : <></>}

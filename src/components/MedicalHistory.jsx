@@ -5,7 +5,7 @@ const MedicalHistory = ({ patient }) => {
     return (
         <>
             <DialogHeader>Historia clínica</DialogHeader>
-            <DialogBody className="overflow-scroll">
+            <DialogBody>
                 <p><strong className="font-bold">N° ficha: </strong>{patient.id_pacient && ` ${patient.id_pacient}`}</p>
                 <p><strong className="font-bold">DNI: </strong>{patient.dni && ` ${patient.dni}`}</p>
                 <p><strong className="font-bold">Nombre: </strong>{` ${patient.last_name}, ${patient.first_name}`}</p>
