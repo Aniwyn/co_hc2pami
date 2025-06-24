@@ -30,7 +30,6 @@ import MedicalHistory from "./components/MedicalHistory.jsx"
 export default function App() {
     const [firstName, setFirstName] = useState("")
     const [lastName, setLastName] = useState("")
-    const [dni, setDni] = useState("")
     const [date, setDate] = useState(new Date())
     const [indexFO, setIndexFO] = useState("")
     const [indexBMC, setIndexBMC] = useState("")
@@ -138,6 +137,13 @@ export default function App() {
             esp: "Esp. Oftalmología",
             mp: "M.P. 2883",
         },
+        {
+            ID: "VALDEZ",
+            name: "Dra. Laura B. Valdez",
+            prof: "Médica",
+            esp: "M.P. 4505",
+            mp: "",
+        }
     ]
 
     const cleanForm = () => {
